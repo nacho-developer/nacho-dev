@@ -1,0 +1,105 @@
+nav {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+nav ul {
+    background: rgba(31, 31, 31, 0.01);
+    backdrop-filter: blur(10px);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 30px;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    padding: 24px;
+    position: absolute;
+    font-weight: 700;
+    height: 100vh;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 790px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        position: initial;
+        -webkit-box-align: center;
+        align-items: center;
+        gap: 0px;
+        padding: 0px;
+        font-size: 1.6rem;
+        background: none;
+        backdrop-filter: none;
+        box-shadow: none;
+        height: 100%;
+    }
+}
+
+nav li {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 800;
+    transition-duration: 0.5s;
+}
+
+ul a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 16px 30px;
+    transition: color 0.5s ease 0s;
+}
+
+nav button {
+    position: relative;
+    display: inline-block;
+    padding: 8px 24px;
+    margin: 0px 16px 0px 30px;
+    border: 2px solid rgb(214, 92, 110);
+    border-radius: 10px;
+    background-color: transparent;
+    text-decoration: none;
+    color: rgb(230, 153, 164);
+    font-family: Poppins, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 790px) {
+    nav button {
+        font-size: 1.6rem;
+        padding: 8px 16px;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
